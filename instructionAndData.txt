@@ -1,0 +1,37 @@
+ C:\Go\src\github.com\jaibjavani\hello
+C:\Users\suhasds\GoWorkSpace\src\github.com\jaibhavani\hello
+C:\Users\suhasds\GoWorkSpace\src\github.com\jaibjavani\hello
+C:\Users\suhasds\GoWorkSpace\src\github.com\jaibhavani\hello
+%GOPATH%\bin\hello
+
+mkdir C:/Users/suhasds/GoWorkSpace/src/github.com/hyperledger
+cd $GOAPTH/src/github.com/hyperledger
+
+git clone -b v0.6 http://gerrit.hyperledger.org/r/fabric
+
+git clone -b v2.0 https://github.com/jaibhavani/learn-chaincode.git
+
+
+ID		Secret
+admin		66bc3441f8
+WebAppAdmin	8bffd1ee41
+user_type1_0	bab13918af
+user_type1_1	bf67aad949
+user_type1_2	d5246b1c73
+user_type1_3	52bedf92cc
+user_type1_4	675112b359
+user_type2_0	f5ee7f2dfc
+user_type2_1	2ed80997aa
+user_type2_2	0f804e7fe2
+user_type2_3	effd443708
+user_type2_4	43a888ef6f
+user_type4_0	898ddc2474
+user_type4_1	426777ec09
+user_type4_2	973b299efa
+user_type4_3	9bfb6af062
+user_type4_4	6cc8a86479
+user_type8_0	9d4bf6a0b4
+user_type8_1	dbc5eb5ac7
+user_type8_2	f77f42183e
+user_type8_3	a8e56db3e4
+user_type8_4	3f34bab380

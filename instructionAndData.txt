@@ -1,4 +1,4 @@
- C:\Go\src\github.com\jaibjavani\hello
+C:\Go\src\github.com\jaibjavani\hello
 C:\Users\suhasds\GoWorkSpace\src\github.com\jaibhavani\hello
 C:\Users\suhasds\GoWorkSpace\src\github.com\jaibjavani\hello
 C:\Users\suhasds\GoWorkSpace\src\github.com\jaibhavani\hello
@@ -35,3 +35,87 @@ user_type8_1	dbc5eb5ac7
 user_type8_2	f77f42183e
 user_type8_3	a8e56db3e4
 user_type8_4	3f34bab380
+
+
+
+{
+     "jsonrpc": "2.0",
+     "method": "deploy",
+     "params": {
+         "type": 1,
+         "chaincodeID": {
+             "path": "https://github.com/jaibhavani/learn-chaincode/tree/v2.0/start"
+         },
+         "ctorMsg": {
+             "function": "init",
+             "args": [
+                 "hi there"
+             ]
+         },
+         "secureContext": "admin"
+     },
+     "id": 1
+ }
+
+
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "OK",
+    "message": "bd0101fa661105b8b2f6642826c9b83e6891a74f763b8d03993114c7c1d7852c9d5d02f7b23038fdeb61f20f83cbfe3b32b345224e18169144b6693d3a9bf15c"
+  },
+  "id": 1
+}
+
+bd0101fa661105b8b2f6642826c9b83e6891a74f763b8d03993114c7c1d7852c9d5d02f7b23038fdeb61f20f83cbfe3b32b345224e18169144b6693d3a9bf15c
+
+https://github.com/jaibhavani/learn-chaincode/start
+
+
+query spec
+
+{
+     "jsonrpc": "2.0",
+     "method": "query",
+     "params": {
+         "type": 1,
+         "chaincodeID": {
+             "name": "bd0101fa661105b8b2f6642826c9b83e6891a74f763b8d03993114c7c1d7852c9d5d02f7b23038fdeb61f20f83cbfe3b32b345224e18169144b6693d3a9bf15c"
+         },
+         "ctorMsg": {
+             "function": "read",
+             "args": [
+                 "hello_world"
+             ]
+         },
+         "secureContext": "admin"
+     },
+     "id": 2
+ }
+
+
+Invoke spec
+
+ {
+     "jsonrpc": "2.0",
+     "method": "invoke",
+     "params": {
+         "type": 1,
+         "chaincodeID": {
+             "name": "bd0101fa661105b8b2f6642826c9b83e6891a74f763b8d03993114c7c1d7852c9d5d02f7b23038fdeb61f20f83cbfe3b32b345224e18169144b6693d3a9bf15c"
+         },
+         "ctorMsg": {
+             "function": "write",
+             "args": [
+                 "hello_world",
+                 "go away"
+             ]
+         },
+         "secureContext": "admin"
+     },
+     "id": 3
+ }
+
+response from Invoke =37446789-125e-47a7-a402-2211d5ec3492
+
+cd $GOPATH/src/github.com/jaibhavani/learn-chaincode/start
